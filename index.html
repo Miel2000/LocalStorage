@@ -70,6 +70,7 @@ function toggleDone(e) {
 
 
 function deleteAllPlates(e) {
+  document.location.reload(true);
  return populateList(localStorage.removeItem('items', JSON.stringify(items)), itemsList);
 
 }
